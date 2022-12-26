@@ -1,0 +1,31 @@
+.flex-container {
+    display: flex;
+    background-color: antiquewhite;
+    flex-wrap: wrap;
+}
+
+.flex-container>div {
+    min-width: 200px;
+    max-width: 200px;
+    min-height: 200px;
+    max-height: 200px;
+    margin: 20px;
+    background-color: white;
+    overflow-y: scroll;
+    text-overflow: ellipsis;
+    justify-content: center;
+}
+
+.centeredIcon {
+    display: flex;
+    /*not a direct child div that is why this came into picture */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div::-webkit-scrollbar {
+    width: 0.25rem;
+}
+div::-webkit-scrollbar-thumb {
+    background: gold;
+}
